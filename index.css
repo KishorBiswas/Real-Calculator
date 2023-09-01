@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #03696e;
+    /* background-color: #0A2647; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 270px;
+    height: 420px;
+    background-color: #e0e8f3;
+    border-radius: 15px;
+    box-shadow:inset 0px 0px 14px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    
+}
+
+
+.display_box{
+    width: 98%;
+    height: 55px;
+    margin: 10px auto 8px;
+}
+
+.display_box input{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:#000;
+    padding-right: 15px;
+    border: none;
+    outline: none;
+    overflow-x: auto;
+    background-color: #e0e8f3;
+    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.6), inset 5px 5px 8px 0px rgba(0, 0, 0, 0.3);
+    
+}
+
+.name{
+    width: 98%;
+    height: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px; 
+    letter-spacing: 1.4px;
+    color: #060047 ;
+    text-shadow: 0 1.5px 4px #eeee;
+    
+}
+
+.btn_container{
+    width: 100%;
+    height: max-content;
+    margin: 5px auto;
+    
+}
+
+.btn_container .row{
+    width: 98%;
+    height: max-content;
+    margin: 5px auto;
+    padding: 0 5px;
+    /* border: 1px solid  #000; */
+    
+}
+
+.btn_container .row button{
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+    border: none;
+    margin: 3px 4px;
+    font-size: 20px;
+    color:#212121;
+    text-align: center;
+    line-height: 46px;
+    background-color: #e0e8f3;
+    transform: scale(1);
+    box-shadow: -5px -4px 10px 0px rgba(255, 255, 255, 0.5), 3px 4px 10px 0px rgba(0, 0, 0, 0.3),
+    inset 3px 4px 10px 0px rgba(0, 0, 0, 0.3), inset -5px -4px 10px 0px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn_container .row button.clicked{
+    color: magenta !important;
+    box-shadow: -5px -4px 10px 0px rgba(255, 255, 255, 0.5), 4px 4px 15px 0px rgba(0, 0, 0, 0.233),
+     inset 8px 8px 14px 0px rgba(0, 0, 0, 0.3), inset -8px -8px 14px 0px rgba(255, 255, 255, 0.5);
+    transform: scale(0.95);
+}
+
+.btn_container .row button.operator{
+    color: #0079FF;
+    font-size: 22px;
+}
+
+.btn_container .row button.equal_btn{
+    width: 105px;
+    height: 46px;
+    
+}
