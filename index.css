@@ -5,25 +5,35 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
+body{
     width: 100%;
     height: 100vh;
     background-color: #03696e;
-    /* background-color: #0A2647; */
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 1200px;
+	transform-style: preserve-3d;
+    /* transform-origin: left bottom; */
 }
 
 .calculator{
     width: 270px;
     height: 420px;
-    background-color: #e0e8f3;
+    background-color: #f0f4fa;
+    /* background-color: #e0e8f3; */
     border-radius: 15px;
-    box-shadow:inset 0px 0px 14px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:inset 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    
+    transition: all .2s;
 }
+
 
 
 .display_box{
@@ -44,21 +54,44 @@
     border: none;
     outline: none;
     overflow-x: auto;
-    background-color: #e0e8f3;
-    box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.6), inset 5px 5px 8px 0px rgba(0, 0, 0, 0.3);
+    background-color: #f6f6fd;
+    /* background-color: #e0e8f3; */
+    box-shadow: inset -5px -8px 10px 0px rgba(216, 215, 226, 0.3), 
+    inset 5px 5px 8px 0px rgba(0, 0, 0, 0.3);
     
 }
 
 .name{
     width: 98%;
-    height: 15px;
+    height: 32px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    margin-bottom: 8px;
+    position: relative;
+}
+.name .viewBox{
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    display: flex;
+}
+.name .viewBox span{
+    color: #212121f1;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 10px;
+    user-select: none;
+}
+
+.name .heading{
     font-size: 16px;
-    margin-bottom: 20px; 
     letter-spacing: 1.4px;
     color: #060047 ;
     text-shadow: 0 1.5px 4px #eeee;
-    
+    user-select: none;
 }
 
 .btn_container{
@@ -87,7 +120,8 @@
     color:#212121;
     text-align: center;
     line-height: 46px;
-    background-color: #e0e8f3;
+    background-color: #f0f4fa;
+    /* background-color: #e0e8f3; */
     transform: scale(1);
     box-shadow: -5px -4px 10px 0px rgba(255, 255, 255, 0.5), 3px 4px 10px 0px rgba(0, 0, 0, 0.3),
     inset 3px 4px 10px 0px rgba(0, 0, 0, 0.3), inset -5px -4px 10px 0px rgba(255, 255, 255, 0.5);
